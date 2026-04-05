@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>កម្មវិធីគណនាកម្ចី</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>ការគណនាកម្ចី</h2>
+    
+    <div class="card">
+        <div class="input-group">
+            <label>ទំហំឥណទាន</label>
+            <input type="number" id="amount" placeholder="ឧទាហរណ៍: 1000">
+        </div>
+        <div class="input-group">
+            <label>អត្រាការប្រាក់ (%/ខែ)</label>
+            <input type="number" id="rate" step="0.01" placeholder="ឧទាហរណ៍: 1">
+        </div>
+        <div class="input-group">
+            <label>រយៈពេល (ឆ្នាំ)</label>
+            <input type="number" id="years" placeholder="ឧទាហរណ៍: 1">
+        </div>
+        <button onclick="calculateLoan()">គណនា/Calculate</button>
+    </div>
+
+    <div id="summary" class="summary-box" style="display:none;">
+        <h3>Summary</h3>
+        <p>ទំហំឥណទាន: <span id="sumAmount"></span></p>
+        <p>អត្រាការប្រាក់: <span id="sumRate"></span>%</p>
+        <p>រយៈពេល: <span id="sumTerm"></span></p>
+        <p><strong>បង់ប្រចាំខែ: $<span id="monthlyPayment"></span></strong></p>
+        <p>កាលបរិច្ឆេទដំបូង: <span id="startDate"></span></p>
+    </div>
+
+    <div class="table-responsive">
+        <table id="scheduleTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>ល.រ</th>
+                    <th>កាលបរិច្ឆេទ</th>
+                    <th>ទំហំឥណទាន</th>
+                    <th>ការប្រាក់</th>
+                    <th>បង់ប្រចាំខែ</th>
+                    <th>ប្រាក់ដើម</th>
+                    <th>សមតុល្យនៅសល់</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <div id="totalInterest" class="total-interest"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

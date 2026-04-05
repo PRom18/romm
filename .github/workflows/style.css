@@ -1,0 +1,81 @@
+body {
+    font-family: 'Khmer OS Battambang', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 { color: #333; font-size: 1.2rem; margin-bottom: 20px; }
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 5px; font-size: 0.9rem; color: #666; }
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.summary-box {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.table-responsive { overflow-x: auto; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+    font-weight: normal;
+    padding: 10px;
+    font-size: 0.85rem;
+}
+
+td {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+tr:nth-child(even) { background-color: #f9f9f9; }
+
+.total-interest {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
